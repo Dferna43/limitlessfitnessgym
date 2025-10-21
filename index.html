@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
 <!-- add required and recommended <meta> tags -->
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-device-width, initial-scale=1.0">
+  <meta name="author" content="Limitless Fitness">
+  <meta name="description" content="Transform your life at Limitless fitness gym">
+  <meta name="robots" content="index, follow">
 </head>
 <body>
 <!-- add a skip link that skips to the main content -->
@@ -19,30 +23,31 @@
     </svg> 
     Transform Your Life at Limitless Fitness
     <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
-    <a href="#">Join Now</a>
+    <a href="#membership-form">Join Now</a>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-    
+    <img
       src="images/facility.jpg"
+      srcset="images/facility-400.">
 
   </header>
   <nav>
-    Main Navigation
+    <h2>Main Navigation</h2>
     <ul>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Classes</a></li>
-      <li><a href="#">Personal Training</a></li>
-      <li><a href="#">Membership Options</a></li>
-      <li><a href="#">Testimonials</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#training">Personal Training</a></li>
+      <li><a href="#membership">Membership Options</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <main>
-    <section>
-      About Us
+  <main id="main-content">
+    <section id="about">
+      <h2>About Us</h2>
       <p>Welcome to Limitless Fitness, where fitness meets community. Our state-of-the-art facility is designed to inspire and support you at every stage of your journey. Whether you're a beginner or a seasoned athlete, our expert trainers and diverse classes provide the perfect environment to achieve your personal best.</p>
       <section>
-        What Sets Us Apart
+        <h3>What Sets Us Apart</h3>
         <ul>
           <li>Personalized Training: Customized workout plans tailored to your goals.</li>
           <li>Top-of-the-Line Equipment: The latest gear to ensure effective and safe workouts.</li>
@@ -51,8 +56,8 @@
         </ul>
       </section>
     </section>
-    <section>
-      Our Classes
+    <section id="classes">
+      <h2>Our Classes</h2>
       <p>Discover a wide variety of classes designed to challenge and energize you.</p>
       <ul>
         <li>HIIT & Cardio: Boost your endurance and burn calories.</li>
