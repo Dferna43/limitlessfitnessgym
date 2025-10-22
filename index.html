@@ -3,10 +3,40 @@
 <head>
 <!-- add required and recommended <meta> tags -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Limitless Fitness">
   <meta name="description" content="Transform your life at Limitless fitness gym">
   <meta name="robots" content="index, follow">
+  <style>
+    .responsive-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: white;
+      padding: 8px;
+      text-decoration: none;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
 <!-- add a skip link that skips to the main content -->
@@ -24,20 +54,20 @@
       <path d="M18 8h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2"></path>
       <path d="M22 12h-1"></path>
     </svg> 
-    Transform Your Life at Limitless Fitness
+    <h1>Transform Your Life at Limitless Fitness</h1>
     <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
     <a href="#membership-form">Join Now</a>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
     <img 
-      src="images/facility.jpg" 
+      src="images/facility-768w.jpg" 
       srcset="images/facility-320w.jpg 320w, images/facility-768w.jpg 768w"
       alt="Gym facility with equipment"
       class="responsive-image">
 
   </header>
   <nav>
-    <h2>Main Navigation</h2>
+    <h2 class="visually-hidden">Main Navigation</h2>
     <ul>
       <li><a href="#about">About Us</a></li>
       <li><a href="#classes">Classes</a></li>
@@ -75,7 +105,7 @@
 <!-- add responsive images for resolution switching -->
         
       <img 
-        src="images/classes.jpg"
+        src="images/classes-768w.jpg"
         srcset="images/classes-320w.jpg 320w, images/classes-768w.jpg 768w"
         alt="class in session with clients working out."
         class="responsive-image">
@@ -91,7 +121,7 @@
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
         <img
-          src="images/dumbells.jpg"
+          src="images/dumbells-768w.jpg"
           srcset="images/dumbells-320w.jpg 320w, images/dumbells-768w.jpg 768w"
           alt="A row of dumbells neatly arranged."
           class="responsive-image">
@@ -146,6 +176,7 @@
     <blockquote>
       <p>Joining Limitless Fitness has completely transformed my approach to fitness. The supportive community and expert guidance have made all the difference!</p>
         <cite>- Alex R.</cite>
+    </blockquote>
     <blockquote>
       <p>The variety of classes and top-notch equipment keeps me motivated every single day.</p>
         <cite>- Jamie L.</cite>
@@ -161,6 +192,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#007BFF" width="35" height="35">
             <path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z"></path>
           </svg>
+          </a>
         </li>
         <li>
           <a href="#" aria-label="Follow us on Twitter">
